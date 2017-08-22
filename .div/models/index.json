@@ -1,0 +1,167 @@
+{
+  plans: {
+    basic: {
+      name: "Basic",
+      desc: false,
+      footer: false,
+      price: {
+        monthly: 24.99,
+        yearly: 280.00
+      },
+      services: [
+        {
+          name: "Uptime monitoring",
+          icon: "dashboard"
+        },{
+          name: "Alerting",
+          icon: "metric"
+        },{
+          name: "Pagespeed Monitoring",
+          icon: "umbrella"
+        },{
+          name: "SSL Monitoring",
+          icon: "umbrella"
+        },{
+          name: "Domain Monitoring",
+          icon: "umbrella"
+        },{
+          name: "Server Monitoring",
+          icon: "umbrella"
+        },{
+          name: "Virus Scan",
+          icon: "umbrella"
+        },{
+          name: "Reporting",
+          icon: "umbrella"
+        },{
+          name: "Data retention",
+          icon: "umbrella"
+        }
+      ]
+    },
+    advanced: {
+      name: "Advanced",
+      desc: false,
+      footer: false,
+      price: {
+        monthly: 79.99,
+        yearly: 940.00
+      },
+      services: [
+        {
+          name: "Uptime monitoring",
+          icon: "dashboard"
+        },{
+          name: "Alerting",
+          icon: "metric"
+        },{
+          name: "Pagespeed Monitoring",
+          icon: "umbrella"
+        },{
+          name: "SSL Monitoring",
+          icon: "umbrella"
+        },{
+          name: "Domain Monitoring",
+          icon: "umbrella"
+        },{
+          name: "Server Monitoring",
+          icon: "umbrella"
+        },{
+          name: "Virus Scan",
+          icon: "umbrella"
+        },{
+          name: "Reporting",
+          icon: "umbrella"
+        },{
+          name: "Data retention",
+          icon: "umbrella"
+        }
+      ]
+    },
+    premium: {
+      name: "Premium",
+      desc: false,
+      footer: false,
+      price: {
+        monthly: "Contact us",
+        yearly: "Contact us"
+      },
+      services: [
+        {
+          name: "Uptime monitoring",
+          icon: "dashboard"
+        },{
+          name: "Alerting",
+          icon: "metric"
+        },{
+          name: "Pagespeed Monitoring",
+          icon: "umbrella"
+        },{
+          name: "SSL Monitoring",
+          icon: "umbrella"
+        },{
+          name: "Domain Monitoring",
+          icon: "umbrella"
+        },{
+          name: "Server Monitoring",
+          icon: "umbrella"
+        },{
+          name: "Virus Scan",
+          icon: "umbrella"
+        },{
+          name: "Reporting",
+          icon: "umbrella"
+        },{
+          name: "Data retention",
+          icon: "umbrella"
+        }
+      ]
+    }
+  },
+  navBarMenus: {
+    home: {
+      caption: "Home",
+      href: "index.html",
+      items: false,
+      active: true
+    },
+    services: {
+      caption: "Services",
+      href: "services.html",
+      items: [
+        {
+          caption: "Website scanner",
+          href: "service-web-scanner.html",
+          items: false
+        },
+        {
+          caption: "Website monitoring",
+          href: "service-web-monitoring.html",
+          items: false
+        },
+        {
+          caption: "Analytics",
+          href: "service-analytics.html",
+          items: false
+        }
+      ],
+      active: false
+    },
+    pricing: {
+      caption: "Pricing",
+      href: "/pricing.html",
+      items: false
+    },
+    about: {
+      caption: "About Us",
+      href: "/about.html",
+      items: false,
+      active: false
+    },
+    contact: {
+      caption: "Contact",
+      href: "/contact.html",
+      items: false
+    }
+  }
+}
