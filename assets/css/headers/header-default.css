@@ -132,7 +132,7 @@
 /*Navbar*/
 .header {
 	z-index: 99;
-	background: #000;
+	background: #fff;
 	position: relative;
 	border-bottom: solid 2px #eee;
 }

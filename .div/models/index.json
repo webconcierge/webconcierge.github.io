@@ -124,7 +124,7 @@
       href: "index.html",
       items: false,
       active: true
-    },
+    },/*
     services: {
       caption: "Services",
       href: "services.html",
@@ -151,7 +151,7 @@
       caption: "Pricing",
       href: "/pricing.html",
       items: false
-    },
+    },*/
     about: {
       caption: "About Us",
       href: "/about.html",

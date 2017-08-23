@@ -43,7 +43,7 @@ label {
 }
 
 a {
-   color: navy;
+   /*color: navy;*/
    text-decoration: none;  
 }
 
@@ -57,7 +57,7 @@ a:focus {
   text-decoration: none;
 }
 a:hover {
-   color: navy;
+   /*color: navy;*/
    text-decoration: underline;
 }
 
