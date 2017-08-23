@@ -9,3 +9,4 @@ call div build -t ./.div/templates/faq.tpl -d ./.div/models/index.json -o ./faq.
 call div build -t ./.div/templates/login.tpl -d ./.div/models/index.json -o ./login.html
 call div build -t ./.div/templates/pricing.tpl -d ./.div/models/index.json -o ./pricing.html
 call div build -t ./.div/templates/terms.tpl -d ./.div/models/index.json  -o ./terms.html
+call div build -t ./.div/templates/privacy.tpl -d ./.div/models/index.json  -o ./privacy.html
