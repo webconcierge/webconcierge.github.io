@@ -12,7 +12,7 @@
                 
                 <!-- Blockquotes -->
                 <blockquote class="hero-webconcierge">
-                    <p></p>
+                    <p>We bring a personal and effective approach to every project we work on, which is why.</p>
                     <small>CEO Vadim Razumeev</small>
                 </blockquote>
             </div>
