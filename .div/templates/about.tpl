@@ -8,19 +8,12 @@
     <div class="container content">
         <div class="row margin-bottom-40">
             <div class="col-md-12 md-margin-bottom-40">
-                <p>Webconcierge is an incredibly beautiful responsive Bootstrap Template for corporate and creative professionals. It works on all major web browsers, tablets and phone. Lorem sequat ipsum dolor lorem sit amet, consectetur adipiscing dolor elit. Webconcierge is an incredibly beautiful responsive Bootstrap Template for It works on all major web.</p>
-                <ul class="list-unstyled">
-                    <li><i class="fa fa-check color-green"></i> Donec id elit non mi porta gravida</li>
-                    <li><i class="fa fa-check color-green"></i> Corporate and Creative</li>
-                    <li><i class="fa fa-check color-green"></i> Responsive Bootstrap Template</li>
-                    <li><i class="fa fa-check color-green"></i> Elit non mi porta gravida</li>
-                    <li><i class="fa fa-check color-green"></i> Award winning digital agency</li>
-                </ul><br />
-
+                <p>Webconcierge is a incredibly online tool for detect problems in your website.</p>
+                
                 <!-- Blockquotes -->
                 <blockquote class="hero-webconcierge">
-                    <p>Award winning digital agency. We bring a personal and effective approach to every project we work on, which is why.</p>
-                    <small>CEO Jack Bour</small>
+                    <p></p>
+                    <small>CEO Vadim Razumeev</small>
                 </blockquote>
             </div>
         </div><!--/row-->
