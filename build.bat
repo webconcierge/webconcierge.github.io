@@ -10,3 +10,4 @@ call div build -t ./.div/templates/login.tpl -d ./.div/models/index.json -o ./lo
 call div build -t ./.div/templates/pricing.tpl -d ./.div/models/index.json -o ./pricing.html
 call div build -t ./.div/templates/terms.tpl -d ./.div/models/index.json  -o ./terms.html
 call div build -t ./.div/templates/privacy.tpl -d ./.div/models/index.json  -o ./privacy.html
+call div build -t ./.div/templates/registration.tpl -d ./.div/models/index.json  -o ./registration.html

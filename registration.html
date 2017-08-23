@@ -1,9 +1,13 @@
+
+
+
+
 <!DOCTYPE html>
 <!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
 <head>
-    <title>{$pageTitle} | WebConcierge</title>
+    <title>Registration | WebConcierge</title>
 
     <!-- Meta -->
     <meta charset="utf-8">
@@ -31,7 +35,14 @@
     <!--[if lt IE 9]><link rel="stylesheet" href="assets/plugins/revolution-slider/rs-plugin/css/settings-ie8.css" type="text/css" media="screen"><![endif]-->
 
     <!-- CSS Page Style -->
-    (( pagestyle ))
+    
+	<!-- CSS Page Style -->
+	<link rel="stylesheet" href="assets/css/pages/page_log_reg_v1.css">
+
+	<!-- CSS Theme -->
+	<link rel="stylesheet" href="assets/css/theme-colors/default.css" id="style_color">
+	<link rel="stylesheet" href="assets/css/theme-skins/dark.css">
+
 
     <!-- CSS Customization -->
     <link rel="stylesheet" href="assets/css/custom.css">
@@ -68,7 +79,9 @@
                     <li class="topbar-devider"></li>
                     <li><a href="faq.html">Help</a></li>
                     <li class="topbar-devider"></li>
-                    <li><a href="login.html">Login</a></li>
+                    <li><a href="login.html">Sign in</a></li>
+                    <li class="topbar-devider"></li>
+                    <li><a href="registration.html">Sign up</a></li>
                 </ul>
             </div>
             <!-- End Topbar -->
@@ -84,27 +97,119 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse mega-menu navbar-responsive-collapse">
             <div class="container">
-                {% unify/nav-bar %}
+                
+<!-- Collect the nav links, forms, and other content for toggling -->
+<div class="collapse navbar-collapse mega-menu navbar-responsive-collapse">
+    <div class="container">
+        <ul class="nav navbar-nav">
+            
+            <li class="dropdown ">
+                <a href="index.html" class="dropdown-toggle" >
+                    Home
+                </a>
+                
+            </li>
+            
+            <li class="dropdown ">
+                <a href="/about.html" class="dropdown-toggle" >
+                    About Us
+                </a>
+                
+            </li>
+            
+            <li class="dropdown ">
+                <a href="/contact.html" class="dropdown-toggle" >
+                    Contact
+                </a>
+                
+            </li>
+            
+
+            <!-- Search Block -->
+            <li>
+                <i class="search fa fa-search search-btn"></i>
+                <div class="search-open">
+                    <div class="input-group animated fadeInDown">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <span class="input-group-btn">
+                            <button class="btn-u" type="button">Go</button>
+                        </span>
+                    </div>
+                </div>
+            </li>
+            <!-- End Search Block -->
+        </ul>
+    </div><!--/end container-->
+</div><!--/navbar-collapse-->
             </div><!--/end container-->
         </div><!--/navbar-collapse-->
     </div>
     <!--=== End Header ===-->
 
-    ?$breadcrumbs
+    
     <!--=== Breadcrumbs ===-->
     <div class="breadcrumbs">
         <div class="container">
-            <h1 class="pull-left">{$pageTitle}</h1>
+            <h1 class="pull-left">Registration</h1>
             <ul class="pull-right breadcrumb">
                 <li><a href="index.html">Home</a></li>
-                <li class="active">{$pageTitle}</li>
+                <li class="active">Registration</li>
             </ul>
         </div>
     </div><!--/breadcrumbs-->
     <!--=== End Breadcrumbs ===-->
-    $breadcrumbs?
+   
 
-    (( body ))
+    
+	<!--=== Content Part ===-->
+	<div class="container content">
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+				<form class="reg-page">
+					<div class="reg-header">
+						<h2>Register a new account</h2>
+						<p>Already Signed Up? Click <a href="login.html" class="color-green">Sign In</a> to login your account.</p>
+					</div>
+
+					<label>First Name</label>
+					<input type="text" class="form-control margin-bottom-20">
+
+					<label>Last Name</label>
+					<input type="text" class="form-control margin-bottom-20">
+
+					<label>Email Address <span class="color-red">*</span></label>
+					<input type="text" class="form-control margin-bottom-20">
+
+					<div class="row">
+						<div class="col-sm-6">
+							<label>Password <span class="color-red">*</span></label>
+							<input type="password" class="form-control margin-bottom-20">
+						</div>
+						<div class="col-sm-6">
+							<label>Confirm Password <span class="color-red">*</span></label>
+							<input type="password" class="form-control margin-bottom-20">
+						</div>
+					</div>
+
+					<hr>
+
+					<div class="row">
+						<div class="col-lg-6 checkbox">
+							<label>
+								<input type="checkbox">
+								I read <a href="terms.html" class="color-green">Terms and Conditions</a>
+							</label>
+						</div>
+						<div class="col-lg-6 text-right">
+							<button class="btn-u" type="submit">Register</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div><!--/container-->
+	<!--=== End Content Part ===-->
+
 
     <!--=== Footer Version 1 ===-->
     <div class="footer-v1">
@@ -146,7 +251,7 @@
                 <div class="row">
                     <div class="col-md-6">
                         <p>
-                            {/div.now:Y/} &copy; All Rights Reserved.
+                            2017 &copy; All Rights Reserved.
                             <a href="/privacy.html">Privacy Policy</a> | <a href="/terms.html">Terms of Service</a>
                         </p>
                     </div>
@@ -228,7 +333,10 @@
 <script src="assets/plugins/placeholder-IE-fixes.js"></script>
 <![endif]-->
 
-(( scripts ))
+
 
 </body>
 </html>
+
+
+
