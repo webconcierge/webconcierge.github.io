@@ -3,10 +3,14 @@
 
 
 
+
+
+
+
 <!DOCTYPE html>
-<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
-<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
-<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<!--[if IE 8]> <html lang="{$lang}" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="{$lang}" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="{$lang}"> <!--<![endif]-->
 <head>
     <title>Frequently Asked Questions | WebConcierge</title>
 
@@ -20,26 +24,26 @@
     <link rel="shortcut icon" href="favicon.ico">
 
     <!-- CSS Global Compulsory -->
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="/assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
 
     <!-- CSS Header and Footer -->
-    <link rel="stylesheet" href="assets/css/headers/header-default.css">
-    <link rel="stylesheet" href="assets/css/footers/footer-v1.css">
+    <link rel="stylesheet" href="/assets/css/headers/header-default.css">
+    <link rel="stylesheet" href="/assets/css/footers/footer-v1.css">
 
     <!-- CSS Implementing Plugins -->
-    <link rel="stylesheet" href="assets/plugins/animate.css">
-    <link rel="stylesheet" href="assets/plugins/line-icons/line-icons.css">
-    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/plugins/owl-carousel/owl-carousel/owl.carousel.css">
-    <link rel="stylesheet" href="assets/plugins/revolution-slider/rs-plugin/css/settings.css" type="text/css" media="screen">
-    <!--[if lt IE 9]><link rel="stylesheet" href="assets/plugins/revolution-slider/rs-plugin/css/settings-ie8.css" type="text/css" media="screen"><![endif]-->
+    <link rel="stylesheet" href="/assets/plugins/animate.css">
+    <link rel="stylesheet" href="/assets/plugins/line-icons/line-icons.css">
+    <link rel="stylesheet" href="/assets/plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/plugins/owl-carousel/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="/assets/plugins/revolution-slider/rs-plugin/css/settings.css" type="text/css" media="screen">
+    <!--[if lt IE 9]><link rel="stylesheet" href="/assets/plugins/revolution-slider/rs-plugin/css/settings-ie8.css" type="text/css" media="screen"><![endif]-->
 
     <!-- CSS Page Style -->
     
 
     <!-- CSS Customization -->
-    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="/assets/css/custom.css">
 
 
 </head>
@@ -51,7 +55,7 @@
         <div class="container">
             <!-- Logo -->
             <a class="logo" href="index.html">
-                <img src="assets/img/logo1-default.png" alt="Logo">
+                <img src="/assets/img/logo1-default.png" alt="Logo">
             </a>
             <!-- End Logo -->
 
@@ -60,22 +64,21 @@
                 <ul class="loginbar pull-right">
                     <li class="hoverSelector">
                         <i class="fa fa-globe"></i>
-                        <a>Languages</a>
+                        <a>{$i18n.word.languages}</a>
                         <ul class="languages hoverSelectorBlock">
+                            [$i18n.langs]
                             <li class="active">
-                                <a href="#">English <i class="fa fa-check"></i></a>
+                                <a href="{$i18n.basePath.{$_key}}">{$value}<i class="fa {?("{$lang}" == "{$_key}")?} fa-check{/?}"></i></a>
                             </li>
-                            <li><a href="#">Spanish</a></li>
-                            <li><a href="#">Russian</a></li>
-                            <li><a href="#">German</a></li>
+                            [/$i18n.langs]
                         </ul>
                     </li>
                     <li class="topbar-devider"></li>
-                    <li><a href="faq.html">Help</a></li>
+                    <li><a href="faq.html">{$i18n.word.help}</a></li>
                     <li class="topbar-devider"></li>
-                    <li><a href="login.html">Sign in</a></li>
+                    <li><a href="login.html">{$i18n.word.signin}</a></li>
                     <li class="topbar-devider"></li>
-                    <li><a href="registration.html">Sign up</a></li>
+                    <li><a href="registration.html">{$i18n.word.signup}</a></li>
                 </ul>
             </div>
             <!-- End Topbar -->
@@ -98,21 +101,21 @@
         <ul class="nav navbar-nav">
             
             <li class="dropdown ">
-                <a href="index.html" class="dropdown-toggle" >
+                <a href="{$i18n.basePath.{$lang}}/" class="dropdown-toggle" >
                     Home
                 </a>
                 
             </li>
             
             <li class="dropdown ">
-                <a href="/about.html" class="dropdown-toggle" >
+                <a href="{$i18n.basePath.{$lang}}/about.html" class="dropdown-toggle" >
                     About Us
                 </a>
                 
             </li>
             
             <li class="dropdown ">
-                <a href="/contact.html" class="dropdown-toggle" >
+                <a href="{$i18n.basePath.{$lang}}/contact.html" class="dropdown-toggle" >
                     Contact
                 </a>
                 
@@ -146,7 +149,7 @@
         <div class="container">
             <h1 class="pull-left">Frequently Asked Questions</h1>
             <ul class="pull-right breadcrumb">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">{$i18n.word.home}</a></li>
                 <li class="active">Frequently Asked Questions</li>
             </ul>
         </div>
@@ -302,7 +305,7 @@
                             <div class="panel-body">
                                 <div class="row">
                                     <div class="col-md-4">
-                                        <img class="img-responsive" src="assets/img/main/img12.jpg" alt="">
+                                        <img class="img-responsive" src="/assets/img/main/img12.jpg" alt="">
                                     </div>
                                     <div class="col-md-8">
                                         Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
@@ -332,7 +335,7 @@
                                         </ul>
                                     </div>
                                     <div class="col-md-4">
-                                        <img class="img-responsive" src="assets/img/main/img3.jpg" alt="">
+                                        <img class="img-responsive" src="/assets/img/main/img3.jpg" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -394,7 +397,7 @@
                 <div class="row">
                     <!-- About -->
                     <div class="col-md-3 md-margin-bottom-40">
-                        <a href="index.html"><img id="logo-footer" class="footer-logo" src="assets/img/logo2-default.png" alt=""></a>
+                        <a href="index.html"><img id="logo-footer" class="footer-logo" src="/assets/img/logo2-default.png" alt=""></a>
                     </div><!--/col-md-3-->
                     <!-- End About -->
 
@@ -406,12 +409,26 @@
 
                     <!-- Link List -->
                     <div class="col-md-3 md-margin-bottom-40">
+                        <div class="headline"><h2>Useful Links</h2></div>
+                        <ul class="list-unstyled link-list">
+                            
+                            
+                            
+                            
+                            <li><a href="/about.html">About Us</a><i class="fa fa-angle-right"></i></li>
+                           
+                            
+                            
+                            <li><a href="/contact.html">Contact</a><i class="fa fa-angle-right"></i></li>
+                           
+                            
 
+                        </ul>
                     </div><!--/col-md-3-->
                     <!-- End Link List -->
 
                     <!-- Address -->
-                    <div class="col-md-3 md-margin-bottom-40">
+                    <div class="col-md-3 map-img md-margin-bottom-40">
                         <div class="headline"><h2>Contact Us</h2></div>
                         <address class="md-margin-bottom-40">
                             Email: <a href="mailto:contact@webconcierge.pro" class="">contact@webconcierge.pro</a>
@@ -481,32 +498,29 @@
 </div><!--/wrapper-->
 
 <!-- JS Global Compulsory -->
-<script type="text/javascript" src="assets/plugins/jquery/jquery.min.js"></script>
-<script type="text/javascript" src="assets/plugins/jquery/jquery-migrate.min.js"></script>
-<script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/plugins/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="/assets/plugins/jquery/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
 <!-- JS Implementing Plugins -->
-<script type="text/javascript" src="assets/plugins/back-to-top.js"></script>
-<script type="text/javascript" src="assets/plugins/smoothScroll.js"></script>
-<script type="text/javascript" src="assets/plugins/owl-carousel/owl-carousel/owl.carousel.js"></script>
-<script type="text/javascript" src="assets/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
-<script type="text/javascript" src="assets/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+<script type="text/javascript" src="/assets/plugins/back-to-top.js"></script>
+<script type="text/javascript" src="/assets/plugins/smoothScroll.js"></script>
+<script type="text/javascript" src="/assets/plugins/owl-carousel/owl-carousel/owl.carousel.js"></script>
+<script type="text/javascript" src="/assets/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+<script type="text/javascript" src="/assets/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
 <!-- JS Customization -->
-<script type="text/javascript" src="assets/js/custom.js"></script>
+<script type="text/javascript" src="/assets/js/custom.js"></script>
 <!-- JS Page Level -->
-<script type="text/javascript" src="assets/js/app.js"></script>
-<script type="text/javascript" src="assets/js/plugins/owl-carousel.js"></script>
-<script type="text/javascript" src="assets/js/plugins/revolution-slider.js"></script>
+<script type="text/javascript" src="/assets/js/app.js"></script>
 <script type="text/javascript">
     jQuery(document).ready(function() {
         App.init();
-        OwlCarousel.initOwlCarousel();
-        RevolutionSlider.initRSfullWidth();
+        
     });
 </script>
 <!--[if lt IE 9]>
-<script src="assets/plugins/respond.js"></script>
-<script src="assets/plugins/html5shiv.js"></script>
-<script src="assets/plugins/placeholder-IE-fixes.js"></script>
+<script src="/assets/plugins/respond.js"></script>
+<script src="/assets/plugins/html5shiv.js"></script>
+<script src="/assets/plugins/placeholder-IE-fixes.js"></script>
 <![endif]-->
 
 
